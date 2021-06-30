@@ -1,6 +1,59 @@
+<!DOCTYPE html>
 <html>
-  <head><title>MakeSimple</title></head>
-  <body>
-    <center> <p>first site in github</p></center>
-  </body>
+<head>
+	<title>Logining</title>
+	 <link rel='icon' href="minion.png" >
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<script type="text/javascript">
+
+		function  dis()
+		{
+            var Uname=document.getElementById("Uname");
+            var Psd=document.getElementById("Psd");
+            var con=confirm("Username--> " + Uname.value +"\n"+"Password--> "+Psd.value);
+            if(con==false)
+            {
+                  alert("re-enter your credentail details");
+                  setTimeout("location.reload(true);");
+            }else 
+            {
+                 alert("Sucessed enter to another details");
+                  setTimeout("location.reload(true);");  
+            }
+
+		}
+		function dis1()
+		{
+			alert("sighup page currently not available");
+		}
+
+	</script>
+</head>
+<body style="background-image: url(rain.gif)  ;background-size:cover;background-repeat:no-repeat;" alt="Responsive image">
+	<center>
+<table border="2"> 
+<tr>	<th><font style="font-family:cursive" size="100" >
+&#128512;	Logining &#128512;</font></th>
+</tr>
+</table>
+<br>
+<form ><br>
+		
+	<font >
+	<label>&#128512;USERNAME :</label> <input type="text" id="Uname" placeholder="Type your name..."></input>
+</font>
+<br><br>
+<font >
+	<label>&#128513;PASSWORD :
+	</label> <input type="password" id="Psd" placeholder="Type your Password..."></input>
+</font>
+<br><br>
+<input type="button" name="btn" value="   Login  " onclick="dis()">
+&nbsp;&nbsp;&nbsp;&nbsp;
+<input type="button" name="btn" value="   SignUp  "  onclick="dis1()">
+</form><br>
+&copy;<p>Copyright by DK</p>
+</center>
+
+</body>
 </html>
